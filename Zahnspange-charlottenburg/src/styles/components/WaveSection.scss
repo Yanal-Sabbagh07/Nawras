@@ -1,0 +1,89 @@
+@import "../variables.scss";
+
+.welcome-title-container {
+  width: 100%;
+  height: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .welcome-title {
+    width: 90%;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: $dark-blue;
+    font-weight: 900;
+    // line-height: 42px;
+    font-family: "Merri";
+  }
+}
+.welcome-waves {
+  width: 100%;
+  height: 40%;
+  background-image: url("../../imgs/waves.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.WaveSection-content-container {
+  width: 100%;
+  height: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .WaveSection-content {
+    font-weight: 400;
+    font-family: "Merri-sans";
+    width: 80%;
+    font-size: $large;
+    line-height: 32px;
+    word-spacing: 4px;
+    color: $gray-6;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5%;
+    // background-color: red;
+    .welcome-title {
+      // background-color: #fff;
+      width: 95%;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+  }
+  .welcome-waves {
+    width: 100%;
+    height: 150px;
+    background-image: url("../../imgs/waves.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    // border: 1px solid black;
+    // background-repeat: no-repeat;
+  }
+  .WaveSection-content-container {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 90%;
+    // background-color: red;
+    .WaveSection-content {
+      font-weight: 400;
+      font-family: "Merri-sans";
+      width: 100%;
+      font-size: $small;
+      line-height: 22px;
+      color: $gray-6;
+      word-spacing: 1px;
+    }
+    .termin-button {
+      width: 100%;
+    }
+  }
+}

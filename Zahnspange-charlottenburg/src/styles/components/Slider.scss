@@ -1,0 +1,186 @@
+@import "../variables.scss";
+
+.slider-container {
+  // padding-top: 4px;
+  width: 100%;
+  height: 101%;
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+
+  .arrow {
+    width: 70px;
+    height: 70px;
+    color: $dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 800;
+    .arrow-icon {
+      font-size: $huge;
+    }
+  }
+  .arrow:hover {
+    color: $light-blue;
+  }
+  .arrow-left {
+    left: 18px;
+  }
+  .arrow-right {
+    right: 18px;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .images-wrapper {
+    height: 100%;
+    display: flex;
+    transition: all 3s ease;
+    // animation: fadeIn 1s;
+    // -webkit-animation: fadeIn 1s;
+    // -moz-animation: fadeIn 1s;
+    // -o-animation: fadeIn 1s;
+    // -ms-animation: fadeIn 1s;
+  }
+  .image-container {
+    width: 100vw;
+    height: 99.4%;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+
+    .image1 {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../imgs/6.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    .image2 {
+      // margin-top: 90px;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../imgs/hero2.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    .image3 {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../imgs/hero1.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    .waiting1 {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/25.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .waiting2 {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/27.jpg");
+      background-size: cover;
+      background-position: 50% 65%;
+    }
+    .waiting3 {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/24.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .zahnputz {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/26.jpg");
+      background-size: cover;
+      background-position: 50% 60%;
+    }
+
+    .rooms {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/23c.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image-chair {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/29.jpg");
+      background-size: cover;
+      background-position: 50% 20%;
+    }
+
+    .chairs {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/imgs/21.jpg");
+      background-size: cover;
+      background-position: 50% 25%;
+    }
+  }
+}
+
+// ---------------------------- MOBILE DESIGN ---------------------------------------------
+
+@media screen and (max-width: 480px) {
+  .slider-container {
+    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+
+    // position: static;
+    .arrow {
+      width: 25px;
+      height: 25px;
+      .arrow-icon {
+        font-size: $huge-mobile;
+      }
+    }
+
+    .arrow-left {
+      left: 8px;
+    }
+    .arrow-right {
+      right: 8px;
+    }
+    .images-wrapper {
+      height: 99%;
+      // width: 300vw;
+    }
+    .image-container {
+      width: 100vw;
+      height: 100%;
+    }
+    .hero-image {
+      width: 100%;
+      height: 99%;
+    }
+  }
+}

@@ -1,0 +1,334 @@
+@import "../variables.scss";
+.treatment-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .aligner {
+    width: 50%;
+    height: 100%;
+    background-position: 75% 50%;
+    background-size: 160%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 165%;
+    }
+  }
+  .ästhetische {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 100%;
+    background-size: 152%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 157%;
+    }
+  }
+  .Präprothetische {
+    width: 50%;
+    height: 100%;
+    background-position: 47% 50%;
+    background-size: 132%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 137%;
+    }
+  }
+  .Kombinierte {
+    width: 50%;
+    height: 100%;
+    background-position: 47% 50%;
+    background-size: 130%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 135%;
+    }
+  }
+  .Digitale {
+    width: 50%;
+    height: 100%;
+    background-position: 2% 50%;
+    background-size: 142%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 147%;
+    }
+  }
+  .Rezidiv {
+    width: 50%;
+    height: 100%;
+    background-size: 137%;
+    background-position: 90% 50%;
+    transition: all 0.5s ease;
+    &:hover {
+      background-size: 142%;
+    }
+  }
+  .aligner-teen {
+    width: 50%;
+    height: 100%;
+    background-size: 155%;
+    background-position: 25% 50%;
+    transition: all 0.5s ease;
+    &:hover {
+      background-size: 160%;
+    }
+  }
+  .feste {
+    width: 50%;
+    height: 100%;
+    background-position: 35% 100%;
+    background-size: 152%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 157%;
+    }
+  }
+  .herausnehmbare {
+    width: 50%;
+    height: 100%;
+    background-position: 70% 50%;
+    background-size: 160%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 165%;
+    }
+  }
+  .frühbehandlung {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 158%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 163%;
+    }
+  }
+  .skelettale {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 70%;
+    background-size: 158%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 163%;
+    }
+  }
+  .retainer {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 70%;
+    background-size: 141%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 146%;
+    }
+  }
+
+  .treatment-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .tratment-right-title {
+      color: $white;
+      font-family: "Merri";
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 52px;
+      letter-spacing: 1.5px;
+      width: 90%;
+      text-align: left;
+    }
+    .tratment-right-txt {
+      color: $gray-1;
+      font-family: "Merri-sans";
+      width: 90%;
+      font-size: $medium;
+      word-spacing: 4px;
+      line-height: 32px;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .treatment-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse !important;
+    .treatment-left {
+      width: 100%;
+      height: 50%;
+      background-size: cover !important;
+    }
+    .treatment-right {
+      width: 95%;
+      height: 50%;
+      align-items: center;
+      justify-content: center;
+      .tratment-right-title {
+        font-size: $medium;
+        font-weight: 900;
+        line-height: 28px;
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        font-family: "Merri-sans";
+        letter-spacing: 0.75px;
+      }
+      .tratment-right-txt {
+        width: 100%;
+        font-size: $small;
+        font-weight: 400;
+        line-height: 22px;
+        // background-color: black;
+        word-spacing: 2px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+    .aligner {
+      width: 100%;
+      height: 225px;
+      background-position: 50% 30%;
+      background-size: cover;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .ästhetische {
+      width: 100%;
+      height: 225px;
+      background-position: bottom;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .Präprothetische {
+      width: 100%;
+      height: 225px;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .Kombinierte {
+      width: 100%;
+      height: 260px;
+      background-position: top;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .Digitale {
+      width: 100%;
+      height: 250px;
+      background-position: 50% 35%;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .Rezidiv {
+      width: 100%;
+      height: 250px;
+      background-size: cover;
+      background-position: 50% 50%;
+      transition: all 0.5s ease;
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .aligner-teen {
+      width: 100%;
+      height: 225px;
+      background-size: cover;
+      background-position: 0% 50%;
+      transition: all 0.5s ease;
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .feste {
+      width: 100%;
+      height: 225px;
+      background-position: bottom;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .herausnehmbare {
+      width: 100%;
+      height: 300px;
+      background-position: 100% 50%;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .frühbehandlung {
+      width: 100%;
+      height: 250px;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .skelettale {
+      width: 100%;
+      height: 225px;
+      background-position: bottom;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .retainer {
+      width: 100%;
+      height: 250px;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+  }
+}

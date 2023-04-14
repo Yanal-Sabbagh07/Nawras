@@ -1,0 +1,295 @@
+@import "../variables.scss";
+.navigation {
+  --webkit-backface-visibility: hidden;
+  --moz-backface-visibility: hidden;
+  --ms-backface-visibility: hidden;
+  &__header {
+    width: 100%;
+    height: 100%;
+  }
+  &__button {
+    background-color: $white;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba($light-blue, 0.3);
+    cursor: pointer;
+    top: 10px;
+    right: 40px;
+  }
+
+  &__background {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: fixed;
+    background-image: radial-gradient($dark-blue, $light-blue);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    top: 28px;
+    right: 56px;
+    opacity: 0.9;
+  }
+
+  &__nav {
+    height: calc(100% - 90px);
+    width: 0%;
+    position: fixed;
+    top: 45px;
+    left: -100vw;
+    z-index: 1500;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    list-style: none;
+    // border: 1px solid black;
+    // text-align: left
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    margin-left: 2rem;
+    // height: 70px;
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 26px;
+      font-family: "Merri";
+      font-weight: 900;
+      letter-spacing: 1px;
+      padding: 1.4rem 2.4rem;
+      color: $white;
+      text-decoration: none;
+      // text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $white 50%
+      );
+      background-size: 250%;
+
+      transition: all 0.4s;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $dark-blue;
+      // transform: translateX(1rem);
+    }
+  }
+  &__special {
+    font-size: 22px !important;
+    color: red;
+  }
+  // ICON
+
+  &__icon {
+    position: relative;
+    margin-top: 35px;
+    &,
+    &::before,
+    &::after {
+      width: 35px;
+      height: 3px;
+      background-color: #fff;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      // transition: all 0.2s;
+    }
+
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      top: 8px;
+    }
+  }
+  &__openHam {
+    background: none;
+  }
+  &__openHam::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: $dark-blue;
+    border-radius: 5px;
+    transform: rotate(135deg);
+    top: 35px;
+    left: 20px;
+  }
+  &__openHam::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: $dark-blue;
+    border-radius: 5px;
+    transform: rotate(-135deg);
+    top: 35px;
+    left: 20px;
+  }
+
+  &__button:hover &__icon::before {
+    top: -10px;
+  }
+
+  &__button:hover &__icon::after {
+    top: 10px;
+  }
+  &__icon-close + &__button &__icon {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    &__button {
+      top: 20px;
+      right: 8px;
+      width: 50px;
+      height: 50px;
+    }
+    &__background {
+      top: 28px;
+      right: 16px;
+      opacity: 0.95;
+    }
+    &__nav {
+      height: calc(100svh - 90px);
+      top: 90px;
+      left: -100vw;
+    }
+    &__list {
+      transform: translate(-50%, -60%);
+      width: 50%;
+      height: 60%;
+      // background-color: red;
+      // background-color: yellow;
+    }
+    &__item {
+      // height: 75px;
+      width: 250px;
+      // padding-left: 30%;
+      // background-color: red;
+    }
+    &__according {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+    &__link {
+      &:link,
+      &:visited {
+        font-family: "Merri";
+        font-weight: 700;
+        letter-spacing: 0px;
+        font-size: $large;
+        color: $gray-1;
+
+        background-image: none;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        background-size: none;
+        transition: all 0.5s;
+        // width: 100%;
+        // height: 100%;
+        // background-color: green;
+        // border: 1px solid green;
+      }
+
+      // &:hover,
+      // &:active {
+      //   transform: translateX(100vw);
+      // }
+    }
+    &__special {
+      font-size: $medium !important;
+      // background-color: red;
+      margin-left: 0px !important;
+    }
+    &__icon {
+      position: relative;
+      margin-top: 25px;
+      &,
+      &::before,
+      &::after {
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block;
+      }
+      &::before {
+        top: -8px;
+      }
+      &::after {
+        top: 8px;
+      }
+    }
+    &__openHam {
+      background: none;
+    }
+    &__openHam::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: $dark-blue;
+      border-radius: 5px;
+      transform: rotate(135deg);
+      top: 25px;
+      left: 12.5px;
+    }
+    &__openHam::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: $dark-blue;
+      border-radius: 5px;
+      transform: rotate(-135deg);
+      top: 25px;
+      left: 12.5px;
+    }
+
+    &__button:hover &__icon::before {
+      top: -8px;
+    }
+
+    &__button:hover &__icon::after {
+      top: 8px;
+    }
+  }
+}
