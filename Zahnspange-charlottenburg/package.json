@@ -1,7 +1,6 @@
 {
   "name": "zahnspange",
   "version": "0.1.0",
-  "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.8.1",
