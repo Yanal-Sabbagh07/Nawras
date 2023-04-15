@@ -25,7 +25,7 @@ export const Header = (props) => {
         <div className="logo-wrapper">
           <Link to="/">
             <img
-              src={"../imgs/logo.webp"}
+              src={require("../imgs/Logo.webp")}
               alt="logo"
               className="logo"
               style={{
