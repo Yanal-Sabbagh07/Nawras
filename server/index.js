@@ -17,6 +17,7 @@ app.use(cors()); // inside it we can put our ip address or domain name
 app.get("/api", function (req, res) {
   // res.sendFile(path.join(__dirname, "build", "index.html"));
   res.send("Here is the Api server");
+  console.log("server is up and running on port 8800");
 });
 
 app.post("/contact", async (req, res) => {
