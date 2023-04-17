@@ -22,7 +22,7 @@ const Index = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://89.116.227.217/contact", {
+      .post("http://89.116.227.217:8800/contact", {
         data: state,
       })
       .then((response) => {

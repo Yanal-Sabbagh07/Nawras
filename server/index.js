@@ -9,9 +9,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(express.static(path.join(__dirname, "build")));
 // Have Node serve the files for our built React app
-app.use(
-  express.static(path.resolve(__dirname, "../Zahnspange-charlottenburg/build"))
-);
+// app.use(
+//   express.static(path.resolve(__dirname, "../Zahnspange-charlottenburg/build"))
+// );
 app.use(cors()); // inside it we can put our ip address or domain name
 
 app.get("/api", function (req, res) {
