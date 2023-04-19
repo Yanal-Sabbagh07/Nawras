@@ -67,7 +67,7 @@ const Adults = () => {
       </section>
       <section className="adults-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/kombinierte1.png)"
+          image="url(../../imgs/kombinierte.jpeg)"
           cn="Kombinierte"
           reverse="true"
           color="#20ade4"
