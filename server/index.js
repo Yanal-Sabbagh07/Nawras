@@ -7,14 +7,16 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "build")));
+// app.use(express.static(path.join(__dirname, "build")));
 //Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, "/var/www/zahnspange")));
+// app.use(
+//   express.static(path.resolve(__dirname, "../Zahnspange-charlottenburg/build"))
+// );
 app.use(cors()); // inside it we can put our ip address or domain name
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "zahnspange", "index.html"));
-  // res.send("Here is the Api server");
+  // res.sendFile(path.join(__dirname, "zahnspange", "index.html"));
+  res.send("Here is the Api server");
   console.log("server is up and running on port 8800");
 });
 
