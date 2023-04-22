@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // );
 app.use(cors()); // inside it we can put our ip address or domain name
 
-app.get("/", function (req, res) {
+app.get("/api", function (req, res) {
   // res.sendFile(path.join(__dirname, "zahnspange", "index.html"));
   res.send("Here is the Api server");
   console.log("server is up and running on port 8800");
