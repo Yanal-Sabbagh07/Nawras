@@ -12,7 +12,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(
 //   express.static(path.resolve(__dirname, "../Zahnspange-charlottenburg/build"))
 // );
-app.use(cors()); // inside it we can put our ip address or domain name
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+); // inside it we can put our ip address or domain name
 
 app.get("/api", function (req, res) {
   // res.sendFile(path.join(__dirname, "zahnspange", "index.html"));
