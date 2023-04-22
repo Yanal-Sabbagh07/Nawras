@@ -22,7 +22,7 @@ const Index = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("api.zahnspange-charlottenburg.de/api", {
+      .post("http://45.9.191.215:8800/contact", {
         data: state,
       })
       .then((response) => {

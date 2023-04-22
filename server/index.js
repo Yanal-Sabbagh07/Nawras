@@ -20,7 +20,7 @@ app.get("/api", function (req, res) {
   console.log("server is up and running on port 8800");
 });
 
-app.post("/api", async (req, res) => {
+app.post("/contact", async (req, res) => {
   let data = req.body.data;
   let { title, name, phone, message, email } = data;
   console.log(data.name);
