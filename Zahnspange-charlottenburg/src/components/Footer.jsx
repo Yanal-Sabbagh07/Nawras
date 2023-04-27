@@ -92,7 +92,7 @@ const Footer = () => {
                   </div> */}
                   <div className="open-times">
                     <div className="day">Fr :</div>
-                    <div className="time"> Nach vereinbarung</div>
+                    <div className="time"> Nach Vereinbarung</div>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ const Footer = () => {
                 </div>
                 <div className="open-times">
                   <div className="day">Fr :</div>
-                  <div className="time"> Nach vereinbarung</div>
+                  <div className="time"> Nach Vereinbarung</div>
                 </div>
               </div>
             </div>

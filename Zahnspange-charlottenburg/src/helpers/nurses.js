@@ -32,7 +32,7 @@ const nurses = [
   {
     id: 6,
     name: "K. Soumah",
-    job: "Zahnmedizinische Fachangestellte Qualitatsmaanagement",
+    job: "Zahnmedizinische Fachangestellte Qualitatsmanagement",
     img: "url(../../imgs/nurse6.jpg)",
   },
 
