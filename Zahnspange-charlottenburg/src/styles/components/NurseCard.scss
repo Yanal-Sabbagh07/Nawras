@@ -124,6 +124,7 @@
   }
   .animate-nurse {
     transform: scale(1);
+    transition: transform 1.5s ease-out;
     opacity: 1;
   }
 }
