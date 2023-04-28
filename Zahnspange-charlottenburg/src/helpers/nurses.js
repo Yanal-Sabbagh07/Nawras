@@ -19,21 +19,21 @@ const nurses = [
   },
   {
     id: 4,
+    name: "K. Soumah",
+    job: "Zahnmedizinische Fachangestellte Qualitatsmanagement",
+    img: "url(../../imgs/nurse6.jpg)",
+  },
+  {
+    id: 5,
     name: "Y. Amrai",
     job: "Zahnmedizinische Fachangestellte",
     img: "url(../../imgs/nurse4.jpg)",
   },
   {
-    id: 5,
+    id: 6,
     name: "D. Khoshnaw",
     job: "Zahnmedizinische Fachangestellte",
     img: "url(../../imgs/nurse5.jpg)",
-  },
-  {
-    id: 6,
-    name: "K. Soumah",
-    job: "Zahnmedizinische Fachangestellte Qualitatsmanagement",
-    img: "url(../../imgs/nurse6.jpg)",
   },
 
   {
