@@ -28,7 +28,7 @@ const Home = () => {
   const [ref3, inView3] = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-300px 0px",
+    rootMargin: "-350px 0px",
   });
   const [ref4, inView4] = useInView({
     threshold: 0,
