@@ -7,9 +7,8 @@ const NurseCard = (props) => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-200px 0px",
 
-    delay: 500,
+    delay: 750,
   });
 
   return (
