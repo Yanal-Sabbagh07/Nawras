@@ -375,52 +375,42 @@
         .treatment-proccess-card-conainer {
           width: 100% !important;
           height: 360px !important;
+          position: static;
         }
         .card-1 {
-          left: -99%;
-          // opacity: 0;
-          transition: all 2s ease-out;
+          transform: translateX(-100%);
         }
         .animate-1 {
-          left: 0;
-          // opacity: 1;
-          transition: all 2s ease-out;
+          transform: translateX(0%);
+          transition: transform 1s ease-out;
         }
         .card-2 {
-          left: 99%;
-          // opacity: 0;
-          transition: all 2s ease-out;
+          transform: translateX(100%);
         }
         .animate-2 {
-          // opacity: 1;
-          left: 0;
-          transition: all 2s ease-out;
+          transform: translateX(0%);
+          transition: transform 1s ease-out;
         }
         .card-3 {
-          left: -99%;
-          opacity: 0;
+          transform: translateX(-100%);
         }
         .animate-3 {
-          // opacity: 1;
-          left: 0;
-          transition: all 2s ease-out;
+          transform: translateX(0%);
+          transition: transform 1s ease-out;
         }
         .card-4 {
-          left: 99%;
-          opacity: 0;
+          transform: translateX(-100%);
         }
         .animate-4 {
-          left: 0;
-          opacity: 1;
-          transition: all 2s ease-out;
+          transform: translateX(0%);
+          transition: transform 1s ease-out;
         }
         .card-5 {
-          left: -99%;
-          opacity: 0;
+          transform: translateX(-100%);
         }
         .animate-5 {
-          opacity: 1;
-          transition: all 2s ease-out;
+          transform: translateX(0%);
+          transition: transform 1s ease-out;
         }
       }
     }

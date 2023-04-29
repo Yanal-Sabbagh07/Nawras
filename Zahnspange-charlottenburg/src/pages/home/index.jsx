@@ -10,13 +10,36 @@ import homeSlider from "../../helpers/homeSlider";
 import { useInView } from "react-intersection-observer";
 
 const Home = () => {
-  const [ref, inView] = useInView({ threshold: 0, triggerOnce: true });
-  const [ref1, inView1] = useInView({ threshold: 0, triggerOnce: true });
+  const [ref, inView] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+  const [ref1, inView1] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-350px 0px",
+  });
 
-  const [ref2, inView2] = useInView({ threshold: 0, triggerOnce: true });
-  const [ref3, inView3] = useInView({ threshold: 0, triggerOnce: true });
-  const [ref4, inView4] = useInView({ threshold: 0, triggerOnce: true });
-  const [ref5, inView5] = useInView({ threshold: 0, triggerOnce: true });
+  const [ref2, inView2] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-350px 0px",
+  });
+  const [ref3, inView3] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-300px 0px",
+  });
+  const [ref4, inView4] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-350px 0px",
+  });
+  const [ref5, inView5] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+    rootMargin: "-350px 0px",
+  });
 
   return (
     <div className="home-page" ref={ref}>
@@ -105,12 +128,12 @@ const Home = () => {
             />
           </div>
           <div
-            ref={ref3}
             className={
               !inView3
                 ? "treatment-proccess-card-conainer card-3"
                 : "treatment-proccess-card-conainer animate-3"
             }
+            ref={ref3}
           >
             <TreatmentProcess
               img="docpat"
