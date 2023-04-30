@@ -8,7 +8,7 @@ const NurseCard = (props) => {
     threshold: 0,
     triggerOnce: true,
 
-    delay: 750,
+    delay: 1000,
   });
 
   return (
