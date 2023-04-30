@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const NurseCard = (props) => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: ".5",
   });
 
