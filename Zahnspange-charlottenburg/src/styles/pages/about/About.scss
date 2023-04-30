@@ -214,11 +214,11 @@
     .about-slider-contianer {
       margin-top: 90px;
       height: calc(50vh - 90px);
-      // background-color: red;
     }
     .team-section-container {
       .title-container {
-        height: 15svh;
+        height: 100px;
+        // background-color: red;
         .title {
           font-size: 24px;
         }
@@ -226,7 +226,8 @@
       .Dr-N-container {
         flex-direction: column;
         margin-bottom: 0px;
-        min-height: 700px;
+        min-height: 600px;
+
         .Dr-N-img-container {
           width: 100%;
           height: 100%;
