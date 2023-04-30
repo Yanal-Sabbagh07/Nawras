@@ -96,7 +96,6 @@
     height: 550px;
     padding-bottom: 60px;
     transform: scale(0.9);
-    opacity: 0.25;
 
     .image-container {
       width: 100%;
@@ -124,8 +123,7 @@
   }
   .animate-nurse {
     transform: scale(1);
-    opacity: 1;
 
-    transition: all 1s ease-out;
+    transition: transform 0.7s ease-out;
   }
 }
