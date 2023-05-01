@@ -7,7 +7,7 @@ import "../../styles/pages/contact/Contact.scss";
 const Index = () => {
   let navigate = useNavigate();
   const initState = {
-    title: "",
+    title: "Frau",
     name: "",
     email: "",
     phone: "",
