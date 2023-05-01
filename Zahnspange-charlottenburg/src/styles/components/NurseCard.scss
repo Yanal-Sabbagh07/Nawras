@@ -28,10 +28,12 @@
       background-size: cover;
       background-repeat: no-repeat;
       opacity: 0.5;
+      transform: scale(0.9);
     }
     .nurse-animate {
       opacity: 1;
-      transition: opacity 1.5s ease-out;
+      transform: scale(1);
+      transition: all 1s ease-out;
     }
   }
 
@@ -113,9 +115,14 @@
         border-radius: 24px;
 
         // border: 1px solid $gray-3;
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center;
         opacity: 1;
+        transform: scale(1);
+      }
+      .nurse-animate {
+        background-size: 105% 105%;
+        transition: background-size 0.7s ease-out;
       }
     }
     .details-container {
@@ -123,10 +130,5 @@
         width: 95vw;
       }
     }
-  }
-  .animate-nurse {
-    transform: scale(1);
-
-    transition: transform 0.7s ease-out;
   }
 }
