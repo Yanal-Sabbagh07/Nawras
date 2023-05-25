@@ -15,6 +15,7 @@ const MobileFooter = (props) => {
       }}
     >
       <div className="social-wrapper">
+        <div className="icons-container"></div>
         <div className="icons-container">
           <a href="mailto:info@zahnspange-charlottenburg.de">
             <EmailIcon className="icon" />
