@@ -23,8 +23,8 @@ body {
   height: 100%;
 } */
 .cky-revisit-bottom-left {
-  bottom: 0px !important;
-  left: 10px !important;
+  bottom: 8px !important;
+  left: 8px !important;
 }
 @font-face {
   font-family: "Merri";
