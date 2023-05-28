@@ -32,7 +32,7 @@
     // background-color: $gray-2;
 
     .welcome-title-container {
-      width: 100%;
+      width: 1250px;
       height: 150px;
       display: flex;
       flex-direction: column;
@@ -40,7 +40,7 @@
       justify-content: center;
       .welcome-title {
         width: 95%;
-        font-size: 40px;
+        font-size: 34px;
         letter-spacing: 1px;
         color: $dark-blue;
         font-weight: 900;
