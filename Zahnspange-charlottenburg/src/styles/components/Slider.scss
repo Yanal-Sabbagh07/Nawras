@@ -181,6 +181,30 @@
     .hero-image {
       width: 100%;
       height: 99%;
+      .waiting1 {
+        background-image: url("../../../public/imgs/25m.jpg");
+      }
+      .waiting2 {
+        background-image: url("../../../public/imgs/27m.jpg");
+      }
+      .waiting3 {
+        background-image: url("../../../public/imgs/24m.jpg");
+      }
+      .zahnputz {
+        background-image: url("../../../public/imgs/26m.jpg");
+      }
+
+      .rooms {
+        background-image: url("../../../public/imgs/23m.jpg");
+      }
+
+      .image-chair {
+        background-image: url("../../../public/imgs/29m.jpg");
+      }
+
+      .chairs {
+        background-image: url("../../../public/imgs/21m.jpg");
+      }
     }
   }
 }
