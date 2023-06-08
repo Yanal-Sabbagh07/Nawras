@@ -17,28 +17,28 @@ const Home = () => {
   const [ref1, inView1] = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-350px 0px",
+    rootMargin: "-325px 0px",
   });
 
   const [ref2, inView2] = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-350px 0px",
+    rootMargin: "-325px 0px",
   });
   const [ref3, inView3] = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-350px 0px",
+    rootMargin: "-325px 0px",
   });
   const [ref4, inView4] = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-350px 0px",
+    rootMargin: "-325px 0px",
   });
   const [ref5, inView5] = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-350px 0px",
+    rootMargin: "-325px 0px",
   });
 
   return (
